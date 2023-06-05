@@ -32,7 +32,7 @@
 
 @media (width <= 767px) {
   .fading-h2 + p {
-    font-size: 12px;
+    font-size: 15px;
     margin-top: -20px;
   }
 }
@@ -224,6 +224,7 @@ body {
 }
 .features .container .feat i {
   color: var(--main-color);
+  font-size: 40px;
 }
 .features .container .feat h2 {
   margin: 30px 0;
@@ -378,12 +379,18 @@ body {
   width: 250px;
   height: 375px;
 }
+@media (width <= 797px) {
+  .about .about-content .image {
+    margin: 0 auto 20px;
+  }
+}
 
-@media (width <= 991px) {
+@media (797px <= width <= 991px) {
   .about .about-content .image {
     display: none;
   }
 }
+
 .about .about-content .image::after {
   content: "";
   position: absolute;
